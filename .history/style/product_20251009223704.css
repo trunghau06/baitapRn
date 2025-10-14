@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header-Page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;  
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; 
+    background-color: white;
+    z-index: 1000;
+}
+
+
+/* Logo */
+.logo {
+    font-family: 'Righteous', Arial, sans-serif;
+    color: #2A367C;
+    font-size: 2em;
+    font-weight: 400;
+    padding-left: 60px;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 28px;
+    font-family: 'Roboto', Arial, sans-serif;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    right: -10px;
+    height: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #3746A0;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    background-color: #3746A0;
+}
+
+/* Banner */
+.header-banner {
+    margin-top: 100px; 
+    width: 100%;
+    height: 200px;
+    background-image: url('../Images/anhHeader_3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.introduce-Page {
+    position: relative;
+    background: linear-gradient(to right, #EBEDEE, #FDFBFB);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 30px 20px;
+    overflow: hidden; 
+}
+
+.introduce-Page h1 {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #2A367C;
+    font-size: 3.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.introduce-Page h3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 2em;
+    color: #666666;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.introduce-Page p {
+    color: #666666;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+} 
+
+.hexagon {
+    position: absolute;
+    background-color: #C8CFF6;
+    clip-path: polygon(
+        50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%
+    );
+    box-shadow: 
+        0 0 0 8px white,           
+        0 0 0 10px #8B9FD9;        
+}
+
+/* Hình lục giác nhỏ với 2 lớp viền */
+.hexagon-small-double {
+    position: absolute;
+    width: 90px;
+    height: 140px;
+    top: 72%; 
+    left: 20px;   
+    z-index: 2;
+}
+
+/* Hình lục giác lớn */
+.hexagon-large {
+    width: 80px;
+    height: 80px;
+    bottom: 10px;
+    right: 5%;
+}
+
+/* Hình lục giác chỉ viền nét đứt */
+.hexagon-outline {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 15%;
+    right: 80px;
+    transform: translateY(-50%);
+}
+
+/* Hình ngũ giác 5 góc nghiêng phải */
+.pentagon-outline {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Hình ngũ giác có ruột màu xanh */
+.pentagon-filled {
+   position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 25%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Cac box */
+.box-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    padding: 40px 40px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.box {
+    width: 30%; 
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.box img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.box-section .box:last-child,
+.box-section .box:nth-last-child(2) {
+    height: 350px; 
+}
+
+.content-box {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.content-box h3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #4D63E2;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 15px 0 15px 0;
+    letter-spacing: 0.5px;
+}
+
+.content-box p {
+    color: #666666;
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: left; 
+}
+
+.box:nth-child(7),
+.box:nth-child(8) {
+    width: 45%;
+}
+
+/* Footer */
+.footer {         
+  display: flex;
+  flex-direction: column;
+  background-color: #3746A0;
+}
+
+.header-Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 160px;
+    margin-top: 50px;
+}
+
+.header-Footer h2 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Righteous', Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons button {
+    background: #FFFFFF;  
+    border: none;             
+    cursor: pointer;
+    width: 60px;        
+    height: 60px;      
+    border-radius: 10px;      
+    display: flex;            
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons button img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain; 
+}
+
+.offices {
+    padding: 10px 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.brand-offices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.office h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+
+.office-info {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.office-info .square {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    background: #202A5F;
+    border-radius: 4px;
+}
+
+.content-info {
+    padding-left: 30px; 
+}
+
+.content-info p {
+    margin: 28px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    color: #FFFFFF;
+}
+
+.phone-group {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+.phone-group p {
+    margin: 0;
+    font-size: 0.8em;
+    margin-bottom: 28px;
+    color: #FFFFFF;
+}
+
+.phone-group .phone p:nth-of-type(3) {
+    margin-bottom: 0;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+
+.content-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+.line {
+    width: 86%;                 
+    height: 2px;                 
+    background: rgba(255,255,255,0.5); 
+    margin: 0 auto 40px auto; 
+}
+
+.footer-links {
+  display: flex;
+  justify-content: left;
+  gap: 200px;   
+  padding: 20px 160px;
+  margin-bottom: 50px;
+}
+
+.link-column h4 {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.link-column ul li {
+  margin: 28px 0;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.link-column ul li i {
+  margin-right: 24px;
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  margin-top: auto;          
+  background: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}

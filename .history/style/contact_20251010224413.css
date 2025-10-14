@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header-Page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;  
+    padding: 0 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; 
+    background-color: white;
+    z-index: 1000;
+}
+
+
+/* Logo */
+.logo {
+    font-family: 'Righteous', Arial, sans-serif;
+    color: #2A367C;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.menu-item {
+    padding: 12px 16px 28px 16px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid transparent; 
+    transition: border-color 0.3s;
+}
+
+.menu-item:hover {
+    border-bottom-color: #3746A0; 
+}
+
+.menu-item.active {
+    border-bottom-color: #3746A0; 
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Banner */
+.header-banner {
+    margin-top: 80px; 
+    width: 100%;
+    height: 200px;
+    background-image: url('../Images/anhHeader_6.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  justify: center;
+  width: 100%;
+  padding: 60px 120px;
+  gap: 60px;
+}
+
+.left-contact,
+.right-contact {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.left-contact {
+    background-color: #ffffff;  
+    border-radius: 20px;    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 50px 20px;
+}
+
+.right-contact {
+    padding-top: 10px;
+}
+
+.left-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-contact h2 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 3em;
+    line-height: 1.5;
+    letter-spacing: 1;
+    color: #2A367C;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.left-contact h3 {
+    color: #666666;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.left-contact label {
+    color: #666666;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1;
+    display: block;
+    margin-top: 15px;
+}
+
+.left-contact label span {
+    color: #E63946;  
+    margin-left: 3px;
+}
+
+.left-contact input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.2s ease;
+}
+
+.left-contact input::placeholder {
+    font-size: 0.8em;  
+    color: #999;        
+}
+
+.left-contact input:focus {
+    outline: none;
+    border-color: #4D63E2;
+    box-shadow: 0 0 4px rgba(77, 99, 226, 0.4);
+}
+
+.left-contact button {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin-top: 15px;
+    background-color: #4D63E2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 32px;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: auto;            
+    display: inline-block;
+    align-self: flex-start; 
+}
+
+.right-contact h3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #3746A0;
+    font-size: 1.8em;
+    line-height: 1.5;
+    letter-spacing: 1;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.right-contact h3:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.info-contact {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-contact .squareContact {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background: #202A5F;
+    border-radius: 4px;
+}
+
+.content-contact {
+    padding-left: 30px; 
+}
+
+.content-contact p {
+    margin: 20px 0;
+    display: flex;
+    font-size: 1em;
+    color: #3B3B3B;
+    line-height: 1.5;
+    letter-spacing: 1;
+}
+
+.phoneContact-group {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+.phoneContact-group p {
+    margin: 0;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #3B3B3B;
+    line-height: 1.5;
+    letter-spacing: 1;
+}
+
+.phoneContact-group .phoneContact p:nth-of-type(3) {
+    margin-bottom: 0;
+}
+
+.phoneContact {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+
+.content-contact img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    vertical-align: middle;
+    filter: brightness(0);
+}
+
+.map-section {
+    width: 100%;
+    padding: 20px 120px;
+    margin-bottom: 30px;
+}
+
+.map-section h2 {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #3746A0;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 40px;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    margin: 0 40px;
+}
+
+/* Footer */
+.footer {         
+  display: flex;
+  flex-direction: column;
+  background-color: #3746A0;
+}
+
+.header-Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    margin-top: 50px;
+}
+
+.header-Footer h2 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Righteous', Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons button {
+    background: #FFFFFF;  
+    border: none;             
+    cursor: pointer;
+    width: 60px;        
+    height: 60px;      
+    border-radius: 10px;      
+    display: flex;            
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons button img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain; 
+}
+
+.offices {
+    padding: 10px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.brand-offices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.office h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+
+.office-info {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.office-info .square {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    background: #202A5F;
+    border-radius: 4px;
+}
+
+.content-info {
+    padding-left: 30px; 
+}
+
+.content-info p {
+    margin: 28px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #FFFFFF;
+}
+
+.phone-group {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+.phone-group p {
+    margin: 0;
+    font-size: 0.9em;
+    margin-bottom: 28px;
+    color: #FFFFFF;
+}
+
+.phone-group .phone p:nth-of-type(3) {
+    margin-bottom: 0;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+
+.content-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+.line {
+    width: 83%;                 
+    height: 2px;                 
+    background: rgba(255,255,255,0.5); 
+    margin: 0 auto 40px auto; 
+}
+
+.footer-links {
+  display: flex;
+  justify-content: left;
+  gap: 200px;   
+  padding: 20px 120px;
+  margin-bottom: 50px;
+}
+
+.link-column h4 {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.link-column ul li {
+  margin: 28px 0;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.link-column ul li i {
+  margin-right: 12px;
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  margin-top: auto;          
+  background: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
