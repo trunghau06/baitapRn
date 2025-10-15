@@ -341,8 +341,8 @@ nav {
     font-size: 1em;
 }
 
-.content-box .detail a {
-    color: #4D63E2;
+.content-box .detail-Box a {
+    color: #4D63E2 !important;
     font-size: 1em;
     text-decoration: none;
 }

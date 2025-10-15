@@ -316,7 +316,7 @@ nav {
     border: none;
     padding: 8px;
     border-radius: 24px;
-    margin: 0 0 20px 0;
+    margin: 20px 0;
     align-self: flex-start;
 }
 
@@ -341,8 +341,8 @@ nav {
     font-size: 1em;
 }
 
-.content-box .detail a {
-    color: #4D63E2;
+.content-box .detail-Box a {
+    color: #4D63E2 !important;
     font-size: 1em;
     text-decoration: none;
 }
