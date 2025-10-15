@@ -74,8 +74,9 @@ nav {
 
 /* Banner */
 .header-banner {
+    margin-top: 80px; 
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-image: url('../Images/anhHeader_4.png');
     background-size: cover;
     background-position: center;
@@ -563,7 +564,7 @@ nav {
     justify-content: left;
     gap: 200px;   
     padding: 20px 120px;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .link-column h4 {
@@ -577,32 +578,30 @@ nav {
 }
 
 .link-column ul {
-    list-style: none;
-    padding: 0 10px;
+  list-style: none;
+  padding: 0 10px;
 }
 
 .link-column ul li {
-    margin: 28px 0;
-    font-size: 0.9em;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    line-height: 1.5;
-    letter-spacing: 0.24px;
+  margin: 28px 0;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
 }
 
 .link-column ul li i {
-    margin-right: 12px;
-    font-size: 0.8em;
-    color: #FFFFFF;
+  margin-right: 12px;
+  font-size: 0.8em;
+  color: #FFFFFF;
 }
 
 .footer-bottom {
-    margin-top: auto;          
-    background: #fff;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 12px;
-    color: #555;
-    border-top: 1px solid #ddd;
+  margin-top: auto;          
+  background: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ddd;
 }

@@ -74,8 +74,9 @@ nav {
 
 /* Banner */
 .header-banner {
+    margin-top: 80px; 
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-image: url('../Images/anhHeader_5.png');
     background-size: cover;
     background-position: center;
@@ -624,7 +625,6 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: #3746A0;
-  margin-top: 100px;
 }
 
 .header-Footer {
@@ -638,8 +638,7 @@ nav {
 .header-Footer h2 {
     font-size: 2em;
     font-weight: bold;
-    line-height: 1.5;
-    letter-spacing: 0.16px;
+    letter-spacing: 2px;
     font-family: 'Righteous', Arial, sans-serif;
     color: #FFFFFF;
 }
@@ -685,8 +684,6 @@ nav {
     margin-bottom: 15px;
     font-size: 1.4em;
     color: #FFFFFF;
-    line-height: 1.5;
-    letter-spacing: 0.16px;
 }
 
 .office-info {
@@ -716,8 +713,6 @@ nav {
     align-items: center;
     font-size: 0.9em;
     color: #FFFFFF;
-    line-height: 1.5;
-    letter-spacing: 0.24px;
 }
 
 .phone-group {
@@ -732,8 +727,6 @@ nav {
     font-size: 0.9em;
     margin-bottom: 28px;
     color: #FFFFFF;
-    line-height: 1.5;
-    letter-spacing: 0.24px;
 }
 
 .phone-group .phone p:nth-of-type(3) {
@@ -762,53 +755,50 @@ nav {
 }
 
 .footer-links {
-    display: flex;
-    justify-content: left;
-    gap: 200px;   
-    padding: 20px 120px;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: left;
+  gap: 200px;   
+  padding: 20px 120px;
+  margin-bottom: 50px;
 }
 
 .link-column h4 {
-    margin-bottom: 15px;
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    line-height: 1.5;
-    letter-spacing: 0.16px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .link-column ul {
-    list-style: none;
-    padding: 0 10px;
+  list-style: none;
+  padding: 0 10px;
 }
 
 .link-column ul li {
-    margin: 28px 0;
-    font-size: 0.9em;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    line-height: 1.5;
-    letter-spacing: 0.24px;
+  margin: 28px 0;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
 }
 
 .link-column ul li i {
-    margin-right: 12px;
-    font-size: 0.8em;
-    color: #FFFFFF;
+  margin-right: 12px;
+  font-size: 0.8em;
+  color: #FFFFFF;
 }
 
 .footer-bottom {
-    margin-top: auto;          
-    background: #fff;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 12px;
-    color: #555;
-    border-top: 1px solid #ddd;
+  margin-top: auto;          
+  background: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ddd;
 }
+
 /* Podup*/
 .popup {
     z-index: 9999;
@@ -837,19 +827,24 @@ nav {
     background: #fff;
     border-radius: 16px;
     width: 50%;
-    padding: 20px;
+    padding: 0 20px;
     max-height: 90vh;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     z-index: 999;
+    overflow-y: auto;
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
 
 .popup-content img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    margin-top: 32px;
     display: block;
     border-radius: 16px;
 }
@@ -877,10 +872,6 @@ nav {
     padding: 0;
     margin-top: 20px;
     gap: 40px;
-    overflow-y: auto;
-
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
 }
 
 .contact-podup {
@@ -893,7 +884,8 @@ nav {
     color: #3B3B3B;
     margin-bottom: 10px;
     line-height: 1.5;
-    letter-spacing: 0.16px;
+    letter-spacing: 1;line-height: 1.5;
+    letter-spacing: 1;
 }
 
 .contact-podup ul {
@@ -929,8 +921,6 @@ nav {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.4em;
     color: #3B3B3B;
-    line-height: 1.5;
-    letter-spacing: 0.16px;
 }
 
 .introduce-podup span {
@@ -945,7 +935,7 @@ nav {
     margin-bottom: 10px;
     font-size: 1em;
     line-height: 1.5;
-    letter-spacing: 0.16px;
+    letter-spacing: 1;
 }
 
 .introduce-podup p:nth-of-type(1) {
@@ -953,5 +943,5 @@ nav {
     margin-top: 10px;
     font-size: 1em;
     line-height: 1.5;
-    letter-spacing: 0.16px;
+    letter-spacing: 1;
 }

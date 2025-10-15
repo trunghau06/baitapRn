@@ -877,10 +877,7 @@ nav {
     padding: 0;
     margin-top: 20px;
     gap: 40px;
-    overflow-y: auto;
 
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
 }
 
 .contact-podup {
